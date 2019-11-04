@@ -8,7 +8,7 @@ const sortByOptions = {
 }
 
 export default function SearchBar(props){
-    renderSortByOptions = () =>{
+    const renderSortByOptions = () =>{
         return Object.keys(sortByOptions).map(sortByOption => {
             let sortByOptionValue = sortByOptions[sortByOption]
 
@@ -20,7 +20,7 @@ export default function SearchBar(props){
         <div className="SearchBar">
         <div className="SearchBar-sort-options">
             <ul>
-            <!-- Use .renderSortByOptions() to sort the businesses by their options -->
+            {renderSortByOptions()}
             </ul>
         </div>
         <div className="SearchBar-fields">

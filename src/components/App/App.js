@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from '../../logo.svg';
 import './App.css';
-import BusinessList from "../BusinessList/BusinessList"
+import BusinessList from "../BusinessList/BusinessList";
+import SearchBar from "../SearchBar/SearchBar";
 
-function App() {
+function App(props) {
   return (
-    <React.Fragment>
+  <div className="App">
+    <h1>ravenous</h1>
+    <SearchBar />
     <BusinessList />
-    </React.Fragment>
+  </div>
   );
 }
 
